@@ -1,0 +1,11 @@
+#!/usr/bin/env node
+'use strict';
+
+const app = require('../src/app');
+
+const port = parseInt(process.env.PORT, 10) || 3000;
+
+app.set('port', port);
+app.set('env', process.env.NODE_ENV || 'development');
+
+app.listen(port);

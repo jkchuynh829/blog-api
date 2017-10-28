@@ -1,0 +1,44 @@
+{
+  "env": {
+    "es6": true,
+    "node": true,
+    "mocha": true
+  },
+  "extends": "eslint:recommended",
+  "parserOptions": {
+  },
+  "rules": {
+    "indent": [
+      "error",
+      2,
+      { "SwitchCase": 1 }
+    ],
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
+    "semi": [
+      "error",
+      "always"
+    ],
+    "no-var": 1,
+    "no-console": 1,
+    "no-unused-vars": [
+      "warn",
+      {
+        "vars": "all",
+        "args": "none"
+      }
+    ],
+    "strict": ["error", "safe"],
+    "no-warning-comments": [
+      "error",
+      {
+        "terms": ["FIXME"],
+        "location": "anywhere"
+      }
+    ],
+    "keyword-spacing": "error",
+    "space-before-blocks": "error"
+  }
+}
