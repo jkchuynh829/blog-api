@@ -7,6 +7,9 @@ const app = express();
 const cors = require('./middlewars/cors');
 const routes = require('./routes');
 const errorHandlers = require('./middlewars/errorHandlers');
+const config = require('config');
+
+console.log(config);
 
 /**
  * For security purposes, it is reccommended
